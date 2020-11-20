@@ -13,19 +13,21 @@ public class Estudiante {
     private String nombre;
     private String apellido;
     private String num_cuenta;
-    private String edad;
+    private int edad;
     private String carrera;
 
     public Estudiante() {
     }
 
-    public Estudiante(String nombre, String apellido, String num_cuenta, String edad, String carrera) {
+    public Estudiante(String nombre, String apellido, String num_cuenta, int edad, String carrera) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.num_cuenta = num_cuenta;
         this.edad = edad;
         this.carrera = carrera;
     }
+
+    
 
     public String getNombre() {
         return nombre;
@@ -51,11 +53,11 @@ public class Estudiante {
         this.num_cuenta = num_cuenta;
     }
 
-    public String getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public void setEdad(String edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 

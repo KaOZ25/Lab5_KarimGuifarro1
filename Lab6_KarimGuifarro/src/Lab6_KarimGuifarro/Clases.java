@@ -10,5 +10,9 @@ package Lab6_KarimGuifarro;
  * @author Karim Ozael
  */
 public class Clases {
-    
+    private String nombre;
+    private String seccion;
+    private String edificion;
+    private String salon;
+    private String aire;
 }

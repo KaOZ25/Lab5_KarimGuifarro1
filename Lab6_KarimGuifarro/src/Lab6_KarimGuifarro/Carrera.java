@@ -11,5 +11,5 @@ public class Carrera {
     private String facultad;
     private int costo;
     private String jefe_carrera;
-    
 }
+
