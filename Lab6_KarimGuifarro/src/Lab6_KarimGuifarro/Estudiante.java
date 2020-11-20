@@ -15,5 +15,61 @@ public class Estudiante {
     private String num_cuenta;
     private String edad;
     private String carrera;
+
+    public Estudiante() {
+    }
+
+    public Estudiante(String nombre, String apellido, String num_cuenta, String edad, String carrera) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.num_cuenta = num_cuenta;
+        this.edad = edad;
+        this.carrera = carrera;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getNum_cuenta() {
+        return num_cuenta;
+    }
+
+    public void setNum_cuenta(String num_cuenta) {
+        this.num_cuenta = num_cuenta;
+    }
+
+    public String getEdad() {
+        return edad;
+    }
+
+    public void setEdad(String edad) {
+        this.edad = edad;
+    }
+
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
+
+    @Override
+    public String toString() {
+        return "Estudiante{" + "nombre=" + nombre + ", apellido=" + apellido + ", num_cuenta=" + num_cuenta + ", edad=" + edad + ", carrera=" + carrera + '}';
+    }
     
 }
