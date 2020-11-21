@@ -20,7 +20,7 @@ public class Clases {
     }
 
     public Clases(String nombre, String seccion, String edificion, String salon, String aire) {
-        this.nombre = nombre;
+        this.nombre=nombre;
         this.seccion = seccion;
         this.edificion = edificion;
         this.salon = salon;
@@ -34,7 +34,7 @@ public class Clases {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
+    
     public String getSeccion() {
         return seccion;
     }

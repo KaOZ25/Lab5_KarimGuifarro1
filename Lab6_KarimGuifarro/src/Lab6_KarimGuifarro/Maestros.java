@@ -14,17 +14,16 @@ public class Maestros {
     private String apellido;
     private String salario;
     private int edad;
-    private String clases;
+    
 
     public Maestros() {
     }
 
-    public Maestros(String nombre, String apellido, String salario, int edad, String clases) {
+    public Maestros(String nombre, String apellido, String salario, int edad) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.salario = salario;
         this.edad = edad;
-        this.clases = clases;
     }
 
     public String getNombre() {
@@ -59,17 +58,11 @@ public class Maestros {
         this.edad = edad;
     }
 
-    public String getClases() {
-        return clases;
-    }
-
-    public void setClases(String clases) {
-        this.clases = clases;
-    }
+ 
 
     @Override
     public String toString() {
-        return  nombre + apellido  + salario + edad + clases ;
+        return  nombre + apellido  + salario + edad ;
     }
     
 }
