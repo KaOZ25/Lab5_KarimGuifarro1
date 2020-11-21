@@ -69,7 +69,7 @@ public class Clases {
 
     @Override
     public String toString() {
-        return nombre + seccion + edificion + salon +  aire ;
+        return nombre + seccion + edificion + salon;
     }
     
 }

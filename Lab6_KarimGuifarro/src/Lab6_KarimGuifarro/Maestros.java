@@ -62,7 +62,7 @@ public class Maestros {
 
     @Override
     public String toString() {
-        return  nombre + apellido  + salario + edad ;
+        return  nombre + apellido;
     }
     
 }

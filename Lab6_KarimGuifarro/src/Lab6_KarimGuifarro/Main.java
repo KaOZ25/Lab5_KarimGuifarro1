@@ -513,13 +513,13 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jList1KeyPressed
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-    DefaultListModel m = (DefaultListModel) Listas.getModel();
-        m.addElement(new Maestros(nombre2.getText(),
+    DefaultListModel n = (DefaultListModel) Listas.getModel();
+        n.addElement(new Maestros(nombre2.getText(),
                 apellido2.getText(),
                 s.getText(),
                 (int) edad2.getValue()
         ));
-        Listas.setModel(m);
+        Listas.setModel(n);
         nombre2.setText("");
         apellido2.setText("");
         edad2.setValue(0);
@@ -528,15 +528,15 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3MouseClicked
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
-        DefaultListModel m = (DefaultListModel) jList3.getModel();
+        DefaultListModel y = (DefaultListModel) jList3.getModel();
         
-        m.addElement(new Clases(nombre.getText(),
+        y.addElement(new Clases(nombre.getText(),
                 seccion.getText(),
                 edificio.getText(),
                 salon.getText(),
                 aire.getText()
         ));
-        jList3.setModel(m);
+        jList3.setModel(y);
         seccion.setText("");
         edificio.setText("");
         salon.setText("");
@@ -547,7 +547,35 @@ public class Main extends javax.swing.JFrame {
         DefaultTreeModel m = (DefaultTreeModel) Jt_Carrera.getModel();
           DefaultMutableTreeNode raiz
                 = (DefaultMutableTreeNode) m.getRoot();
-          
+          DefaultMutableTreeNode Ingienerias =
+                  Ingienerias 
+                  =new DefaultMutableTreeNode(new Estudiante(
+                  nombre.getText(),
+                  apellido.getText(),
+                  num_cuenta.getText(),
+                  (Integer) edad.getValue(),
+                  carrera.getText()));
+          DefaultMutableTreeNode Licenciaturas =
+                  Licenciaturas 
+                  =new DefaultMutableTreeNode(new Estudiante(
+                  nombre.getText(),
+                  apellido.getText(),
+                  num_cuenta.getText(),
+                  (Integer) edad.getValue(),
+                  carrera.getText()));
+          DefaultMutableTreeNode Ciencias_Salud =
+                  Ciencias_Salud 
+                  =new DefaultMutableTreeNode(new Estudiante(
+                  nombre.getText(),
+                  apellido.getText(),
+                  num_cuenta.getText(),
+                  (Integer) edad.getValue(),
+                  carrera.getText()));
+          Licenciaturas.add(raiz);
+          Ingienerias.add(raiz);
+          Ciencias_Salud.add(raiz);
+          m.reload();
+          nombre.setText("");
     }//GEN-LAST:event_AgregarKeyPressed
 
     private void aireActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aireActionPerformed
